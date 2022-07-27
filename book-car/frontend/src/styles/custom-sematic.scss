@@ -1,0 +1,29 @@
+.ui.search.dropdown > .text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+.ui.selection.dropdown {
+    white-space: nowrap;
+}
+
+.ui.dropdown .menu {
+    top: calc(100% + 5px);
+    width: 100%;
+}
+
+.ui.selection.dropdown .menu {
+    border-top-width: 1px !important;
+    max-width: auto;
+}
+
+.popup-container .MuiFormControl-marginNormal {
+    margin-top: 0;
+}
+
+.ui.form .field .ui.input,
+.ui.form .fields .field .ui.input,
+.ui.form .wide.field .ui.input {
+    height: 38px;
+}

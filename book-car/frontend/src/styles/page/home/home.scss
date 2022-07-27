@@ -1,0 +1,144 @@
+.book-ticket {
+    max-width: 936px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 16px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 24px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    position: relative;
+    height: 150px;
+
+    .book-ticket-item {
+        border: 1px solid #dce1e6;
+        border-radius: 6px;
+        padding: 10px 16px;
+        max-width: 380px;
+        p {
+            padding-bottom: 4px;
+            font-size: 14px;
+        }
+    }
+
+    .time {
+        margin-left: 20px;
+    }
+
+    .revert-icon {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin: 0 -10px;
+        z-index: 1;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .revert-icon:hover {
+        transform: rotate(180deg);
+    }
+
+    .btn--search {
+        position: absolute;
+        bottom: -16px;
+        right: 80px;
+        font-size: 20px;
+    }
+
+    // custome datepicker
+    .MuiFormControl-marginNormal {
+        margin: 0;
+    }
+
+    .MuiFormControl-marginNormal {
+        width: 100%;
+        height: 38px;
+    }
+}
+
+@mixin textOverflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.popular {
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+
+    .popular-title {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        padding: 10px 0;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    .popular-list {
+        flex-wrap: wrap;
+    }
+}
+
+.home-container {
+    main {
+        width: 1200px;
+        min-width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+.list-item {
+    width: 48%;
+    // padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 8px;
+    margin: 1%;
+    cursor: pointer;
+    transition: all ease-out 0.5s;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+
+    .detail-img {
+        height: 100%;
+        width: 200px;
+        min-width: 200px;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+    .detail-content {
+        padding: 10px 15px;
+        flex: 1;
+        overflow: hidden;
+
+        > p {
+            padding: 6px 0;
+            @include textOverflow;
+        }
+    }
+
+    .detail-content .road-map {
+        text-align: center;
+        font-size: 18px;
+        color: #0e6eb8;
+        margin-bottom: 10px;
+        @include textOverflow;
+    }
+}
+
+.list-item:hover {
+    transform: translateY(-5px);
+    text-decoration: none;
+}
+
+.list-item:hover::after {
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    background-color: #2185d0;
+}

@@ -1,0 +1,132 @@
+.popup-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba($color: #000000, $alpha: 0.4);
+    z-index: 10;
+    display: grid;
+    place-items: center;
+
+    .popup-main {
+        background-color: #fff;
+        border-radius: 4px;
+        width: 560px;
+        padding: 16px;
+        > header {
+            padding: 10px 0;
+            border-bottom: 1px solid #e5e5e5;
+            margin-bottom: 5px;
+        }
+        .title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .infor {
+            .place-infor {
+                padding: 0 5px;
+            }
+            .place-infor img {
+                position: relative;
+                width: 40px;
+                animation: carRun 5s ease-in infinite;
+            }
+
+            .place-infor > div.infor-text {
+                padding-top: 5px;
+                font-weight: bold;
+                font-size: 20px;
+                color: $blue;
+            }
+
+            .route-infor {
+                padding: 0px 0 10px 0;
+
+                > p {
+                    padding: 5px 0;
+                    font-size: 16px;
+                }
+            }
+        }
+        .booking {
+            border-bottom: 1px solid #e5e5e5;
+
+            .booking-infor {
+                padding: 10px 0 10px 0;
+            }
+
+            .total-money {
+                padding: 10px 0 20px 0;
+                font-size: 18px;
+                font-weight: 700;
+            }
+        }
+
+        > .footer {
+            padding: 10px 0;
+            .c-btn {
+                border: 1px solid rgba(0, 0, 0, 0.5);
+                font-size: 16px;
+                font-weight: 700;
+            }
+
+            .btn--save {
+                background-color: $main;
+                transition: all 0.1s ease-out;
+                border: none;
+                &:hover {
+                    color: white;
+                }
+            }
+
+            .btn--cancel {
+                margin-right: auto;
+                &:hover {
+                    background-color: #e5e5e5;
+                }
+            }
+        }
+
+        .sub-title {
+            font-size: 18px;
+            font-weight: 700;
+            padding: 5px 0;
+            position: relative;
+            margin-bottom: 5px;
+
+            &::after {
+                content: '';
+                width: 90px;
+                height: 4px;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                background-color: $main;
+            }
+        }
+    }
+}
+
+.icon--car {
+    flex: 1;
+    margin: 0 20px;
+    position: relative;
+}
+
+@keyframes carRun {
+    0% {
+        left: 0;
+        opacity: 0;
+    }
+
+    45% {
+        left: 45%;
+        opacity: 1;
+    }
+
+    100% {
+        left: 80%;
+        opacity: 0;
+    }
+}

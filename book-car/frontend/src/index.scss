@@ -1,0 +1,147 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: 'Poppins', sans-serif;
+	// background-color: rgb(241, 240, 241);
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+p {
+	margin: 0 !important;
+}
+
+//sematic-ui
+@import 'semantic-ui-css/semantic.min.css';
+//authentication
+@import './styles/page/auth/authentication.scss';
+@import './styles/page/auth/login.scss';
+@import './styles/page/auth/signup.scss';
+@import './styles/page/auth/active-account.scss';
+// setting
+@import './styles/page/setting/setting.scss';
+// base
+@import './styles/common/base.scss';
+@import './styles/common/color.scss';
+// home
+@import './styles/page/home/home.scss';
+@import './styles/page/home/infor-popup.scss';
+// ticket
+@import './styles/page/ticket/ticket.scss';
+@import './styles/page/error/forbidden.scss';
+
+@import './styles/layout/header.scss';
+@import './styles/custom-sematic.scss';
+@import './styles/components/loader.scss';
+@import './styles/components/loader.scss';
+@import './styles/page/admin/admin.scss';
+@import './styles/grid.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,500&display=swap');
+
+.confirm-container {
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	display: grid;
+	place-items: center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9999;
+	.confirm {
+		padding: 10px;
+		background-color: white;
+		border-radius: 5px;
+		width: 450px;
+		min-height: 130px;
+		.confirm-header {
+			padding: 10px 0;
+			font-size: 20px;
+			font-weight: bold;
+			border-bottom: 1px solid #e5e5e5;
+			margin-bottom: 10px;
+		}
+
+		.btn-group {
+			text-align: center;
+			margin-bottom: 30px;
+			margin-top: 15px;
+		}
+
+		.btn {
+			padding: 8px 20px;
+			color: white;
+			border-radius: 5px;
+		}
+
+		.btn--accept {
+			background-color: green;
+		}
+
+		.btn--cancel {
+			background-color: #db2828;
+			max-width: 120px;
+		}
+
+		.otp-enter {
+			margin: 10px 0;
+
+			p {
+				padding: 10px 0;
+			}
+
+			.btn--cancel {
+				margin-left: 150px;
+				margin-top: 15px;
+			}
+
+			.change-confirm-method {
+				margin: 10px 0;
+				padding: 3px 0;
+				cursor: pointer;
+				&:hover {
+					color: $main;
+				}
+			}
+		}
+
+		input[type='text'] {
+			height: 40px;
+			padding: 0 15px;
+			font-size: 18px;
+			width: 75%;
+			border-radius: 5px;
+			margin-right: 4px;
+			outline: none;
+			border: 1px solid rgba(0, 0, 0, 0.4);
+			flex: 1;
+		}
+	}
+}

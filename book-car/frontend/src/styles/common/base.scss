@@ -1,0 +1,92 @@
+// Displaying flex
+.d-flex {
+    display: flex;
+}
+
+.d-center-flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-sp-ar {
+    justify-content: space-around;
+}
+
+.flex-sp-bt {
+    justify-content: space-between;
+}
+
+// Centering item
+.center {
+    display: grid;
+    place-items: center;
+}
+
+// text
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+// margin
+.mg-r-12 {
+    margin-right: 12px !important;
+}
+
+.mg-bt-4 {
+    margin-bottom: 4px;
+}
+
+.mg-r-auto {
+    margin-right: auto;
+}
+
+.mg-l-12 {
+    margin-left: 12px !important;
+}
+
+// padding
+.pd-l-12 {
+    padding-left: 12px;
+}
+.pd-r-12 {
+    padding-right: 12px;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-30per {
+    width: 33.3333%;
+    max-width: 33.3333%;
+}
+
+.c-btn {
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+}

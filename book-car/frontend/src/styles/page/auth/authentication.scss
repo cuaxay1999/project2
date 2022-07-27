@@ -1,0 +1,40 @@
+@import '../../common/color.scss';
+
+.authentication {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url('../../../assets/img/img101.png');
+    display: grid;
+    place-items: center;
+    background-size: cover;
+    .form {
+        width: 60%;
+        height: fit-content;
+        margin: auto;
+    }
+    img {
+        position: absolute;
+        height: 16%;
+        left: 5px;
+        top: 5px;
+    }
+
+    .link-to {
+        text-align: center;
+        margin-top: 15px;
+        a {
+            color: #0e6eb8;
+            font-weight: 700;
+        }
+    }
+}
+.has-error {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #f64e60;
+    border-radius: 4px;
+    color: white;
+    font-weight: 500;
+}
